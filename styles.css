@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+* {
+  font-family: 'Quicksand';
+}
 body {
   background: #f2f2f2;
   margin: 0;
@@ -33,4 +38,13 @@ body {
 button {
   margin-bottom: 40px;
   font-size: 2em;
+}
+.loading {
+  display: none;
+}
+.loading.active {
+  display: block;
+  font-size: 2em;
+  text-align: center;
+  margin: 10px 0;
 }

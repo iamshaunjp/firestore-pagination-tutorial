@@ -1,9 +1,11 @@
 const container = document.querySelector('.container');
+const loading = document.querySelector('.loading');
 
 // store last document retrieved
 let latestDoc = null;
 
 const getNextReviews = async (doc) => {
+  loading.classList.add('active');
 
   const ref = db.collection('reviews')
     .orderBy('createdAt')
@@ -25,6 +27,7 @@ const getNextReviews = async (doc) => {
     `
   })
   container.innerHTML += template;
+  loading.classList.remove('active');
   
   // update latest doc
   latestDoc = data.docs[data.docs.length - 1];
