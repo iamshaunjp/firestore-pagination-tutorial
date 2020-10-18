@@ -1,0 +1,36 @@
+body {
+  background: #f2f2f2;
+  margin: 0;
+}
+.container {
+  width: 960px;
+  margin: 10px auto;
+  padding: 20px;
+  /* scroll stuff */
+  max-height: 80%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  font-size: 1.2em;
+}
+.card h2 {
+  margin-bottom: 0;
+}
+.card p {
+  margin-top: 4px;
+}
+.load-more {
+  text-align: center;
+}
+button {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
